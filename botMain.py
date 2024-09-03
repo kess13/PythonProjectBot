@@ -179,7 +179,7 @@ async def send_tech_security_menu(message: types.Message):
         [types.InlineKeyboardButton(text="Пожежна безпека", callback_data="fire_safety")],
         [types.InlineKeyboardButton(text="⬅️ Назад", callback_data="back_to_main")]
     ]
-few
+
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons)
     await bot.send_message(message.chat.id, "Виберіть підкатегорію Технічна охорона:", reply_markup=keyboard)
 
